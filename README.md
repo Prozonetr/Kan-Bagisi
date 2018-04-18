@@ -1,9 +1,9 @@
 # Kan-Bagisi
 JSF
-Login:<br></br>
+Login:
 ![picture](a.jpg)
-Login:<br></br>
+Login:
 ![picture](b.jpg)
-Login:<br></br>
+Login:
 ![picture](c.jpg)
 
