@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+    <h:head>
+        <title>Bilgi Girişi</title>
+        <style>
+            body{margin: auto; width: 30%;}
+            textarea{width: 298px; height: 111px;}
+        </style>
+    </h:head>
+    <h:body>
+        <f:view >
+            <h:form >
+                
+                <br><h1>Bilgi Girişi</h1></br>
+                username:<br><h:inputText value="#{managed_Bean.username}"></h:inputText></br>
+                password:<br><h:inputText value="#{managed_Bean.password}"></h:inputText></br>
+                name_surname:<br><h:inputText value="#{managed_Bean.name_surname}"></h:inputText></br>
+                mail:<br><h:inputText value="#{managed_Bean.mail}"></h:inputText></br>
+                tel:<br><h:inputText value="#{managed_Bean.tel}"></h:inputText></br>
+                address:<br><h:inputTextarea value="#{managed_Bean.address}"></h:inputTextarea></br>
+                kan:<br><h:inputText value="#{managed_Bean.kan}"></h:inputText></br>
+                <h:commandButton value="Kaydet" actionListener="#{managed_Bean.insertB()}" action="index"></h:commandButton>
+            </h:form>
+        </f:view>
+    </h:body>
+</html>
+

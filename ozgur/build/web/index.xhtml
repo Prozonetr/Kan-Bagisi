@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+    <h:head>
+        <title>Kan Bağışı</title>
+        <style>
+            tr,th,td{border: solid 1px}
+            table{width: 70%; margin: auto;}
+            form,h1{text-align: center}
+        </style>
+    </h:head>
+    <h:body>
+        <h1>Kan Bağışı</h1>
+        <f:view>
+            <h:form>
+                username:<br><h:inputText value="#{managed_Bean.username}"></h:inputText></br>
+                password:<br><h:inputText value="#{managed_Bean.password}"></h:inputText></br>
+                <h:commandButton value="Giriş" action="index"></h:commandButton>
+                <h:commandButton value="Kaydol" actionListener="#{managed_Bean.resetValue()}" action="insert"></h:commandButton>
+                <h:commandButton action="search" value="Ara"></h:commandButton>                
+            </h:form>
+        </f:view>
+    </h:body>
+</html>
+

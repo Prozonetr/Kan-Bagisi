@@ -1,0 +1,54 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+    <h:head>
+        <title>Arama</title>
+        <style>
+            tr,th,td{border: solid 1px}
+            table{width: 70%; margin: auto;}
+            form,h1{text-align: center}
+        </style>
+    </h:head>
+    <h:body>
+        <h1>Arama</h1>
+       <f:view>
+            <h:form>
+                Lütfen aramak istediğiniz kan grubunu belirtiniz.
+                <h:inputText value="#{managed_Bean.search}"></h:inputText>
+                <h:commandButton value="Ara" ></h:commandButton>
+            </h:form>
+        </f:view>
+        <br></br>
+         <f:view>
+            <h:form>
+                <h:dataTable value="#{managed_Bean.searchBluewave}" var="item">
+                    
+                    <h:column>
+                        <f:facet name="header">İsim</f:facet>
+                        <h:outputText value="#{item.name_surname}"></h:outputText>
+                    </h:column>
+                    <h:column>
+                        <f:facet name="header">Mail</f:facet>
+                        <h:outputText value="#{item.mail}"></h:outputText>
+                    </h:column>
+                    <h:column>
+                        <f:facet name="header">Tel</f:facet>
+                        <h:outputText value="#{item.tel}"></h:outputText>
+                    </h:column>
+                    <h:column>
+                        <f:facet name="header">Adres</f:facet>
+                        <h:outputText value="#{item.address}"></h:outputText>
+                    </h:column>
+                    <h:column>
+                        <f:facet name="header">Kan Grubu</f:facet>
+                        <h:outputText value="#{item.kan}"></h:outputText>
+                    </h:column>
+                    
+                </h:dataTable>
+            </h:form>
+        </f:view>
+    </h:body>
+</html>
+
