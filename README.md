@@ -1,11 +1,10 @@
 # Kan-Bagisi
 JSF<br></br>
-Login:
+In DBUtil, you must change connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/product", "root", "yourpass");
+according to your database.<br>	
+Here mysql used.<br>
+![picture](d.jpg)
 ![picture](a.jpg)
-<br></br><br></br>
-Insert:
 ![picture](b.jpg)
-<br></br><br></br>
-Search:
 ![picture](c.jpg)
 
